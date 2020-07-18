@@ -12,3 +12,4 @@
     - vim
     - tmux
     - bind-utils
+    - ncdu
