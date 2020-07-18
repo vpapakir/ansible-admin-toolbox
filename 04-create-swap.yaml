@@ -1,0 +1,4 @@
+- hosts: allservers
+  remote_user: root
+  tasks:
+  - shell: dd if=/dev/zero of=/swapspace bs=4096 count=2097152 && chmod 600 /swapspace && mkswap /swapspace && swapon /swapspace

@@ -1,6 +1,4 @@
 - hosts: allservers
+  remote_user: root
   tasks:
-  - name: yum
-    yum:
-      name: '*'
-      state: latest
+  - shell: yum -v -y upgrade
