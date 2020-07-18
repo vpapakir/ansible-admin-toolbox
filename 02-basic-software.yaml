@@ -1,0 +1,14 @@
+- hosts: allservers
+  tasks:
+  - name: yum
+    yum:
+      name: "{{ item }}"
+      state: present
+    with_items:
+    - epel-release
+    - git
+    - htop
+    - nmap
+    - vim
+    - tmux
+    - bind-utils

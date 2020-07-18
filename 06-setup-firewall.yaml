@@ -1,0 +1,48 @@
+- hosts: gateways
+  tasks:
+  - name: yum
+    yum:
+      name: "{{ item }}"
+      state: latest
+    with_items:
+    - firewalld
+    - fail2ban-all
+
+- hosts: gateways
+  tasks:
+  - name: enable fail2ban
+    systemd:
+     enabled: yes
+     name: fail2ban
+  - name: enable firewalld
+    systemd:
+     enabled: yes
+     name: firewalld
+  - name: restart firewalld
+    systemd:
+     state: restarted
+     daemon_reload: yes
+     name: firewalld
+  - name: restart fail2ban
+    systemd:
+     state: restarted
+     daemon_reload: yes
+     name: fail2ban
+
+- hosts: gateways
+  remote_user: root
+  tasks:
+  - shell: firewall-cmd --permanent --zone=public --add-service=ssh
+
+- hosts: gateways
+  remote_user: root
+  tasks:
+  - name: Create a basic jail conf, omly for ssh
+    copy:
+     content: "[DEFAULT] # Ban hosts for one hour: \nbantime = 3600 \n# Override /etc/fail2ban/jail.d/00-firewalld.conf: \nbanaction = iptables-multiport \n[sshd] \nenabled = true"
+     dest: /etc/fail2ban/jail.local
+  - name: restart fail2ban
+    systemd:
+     state: restarted
+     daemon_reload: yes
+     name: fail2ban
