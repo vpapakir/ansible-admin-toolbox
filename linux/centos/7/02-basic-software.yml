@@ -13,3 +13,4 @@
     - tmux
     - bind-utils
     - ncdu
+    - unzip
