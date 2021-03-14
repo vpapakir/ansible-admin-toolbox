@@ -1,0 +1,33 @@
+---
+- hosts: webmin
+  tasks:
+  - name: Adding webmin Centos/RHEL repos
+    copy:
+      dest: "/etc/yum.repos.d/webmin.repo"
+      content: |
+        [Webmin]
+        name=Webmin Distribution Neutral
+        mirrorlist=https://download.webmin.com/download/yum/mirrorlist
+        enabled=1
+
+  - name: Downloading Signing Key
+    become: yes
+    get_url:
+      url: http://www.webmin.com/jcameron-key.asc
+      dest: /etc/yum.repos.d/
+
+  - name: Import Signing Key
+    command: rpm --import /etc/yum.repos.d/jcameron-key.asc
+
+  - name: Install Webmin Package
+    yum:
+      name: "{{ item }}"
+      state: present
+    with_items:
+    - webmin
+
+  - name: Enable port 10000 in firewall rules of firewalld (explicit firewall-cmd --reload is required!!!)
+    firewalld:
+      port: 10000/tcp
+      permanent: yes
+      state: enabled

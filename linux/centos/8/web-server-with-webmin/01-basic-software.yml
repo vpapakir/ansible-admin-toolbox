@@ -16,6 +16,7 @@
     - unzip
     - wget
     - nload
+    - fail2ban
     - perl 
     - perl-Net-SSLeay 
     - openssl 
