@@ -1,0 +1,23 @@
+- hosts: webmin
+  tasks:
+  - name: yum
+    yum:
+      name: "{{ item }}"
+      state: present
+    with_items:
+    - epel-release
+    - git
+    - htop
+    - nmap
+    - vim
+    - tmux
+    - bind-utils
+    - ncdu
+    - unzip
+    - wget
+    - nload
+    - fail2ban
+    - perl 
+    - perl-Net-SSLeay 
+    - openssl 
+    - perl-Encode-Detect
