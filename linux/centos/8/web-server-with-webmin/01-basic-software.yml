@@ -1,4 +1,6 @@
 - hosts: webmin
+  become: true
+  become_user: root
   tasks:
   - name: yum
     yum:
