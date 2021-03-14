@@ -1,5 +1,7 @@
 ---
 - hosts: webmin
+  become: true
+  become_user: root
   tasks:
   - name: Adding webmin Centos/RHEL repos
     copy:
@@ -11,7 +13,6 @@
         enabled=1
 
   - name: Downloading Signing Key
-    become: yes
     get_url:
       url: http://www.webmin.com/jcameron-key.asc
       dest: /etc/yum.repos.d/
