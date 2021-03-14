@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 script {
-                  RESULT = sh(returnStdout: true, script: 'ansible-playbook -v ./linux/centos/8/web-server-with-webmin/01-basic-software.yml')
+                  RESULT = sh(returnStdout: true, script: 'sudo ansible-playbook -v ./linux/centos/8/web-server-with-webmin/01-basic-software.yml')
                 }
                 echo "${RESULT}"
             }
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 script {
-                  RESULT = sh(returnStdout: true, script: 'ansible-playbook -v ./linux/centos/8/web-server-with-webmin/02-install-webmin.yml')
+                  RESULT = sh(returnStdout: true, script: 'sudo ansible-playbook -v ./linux/centos/8/web-server-with-webmin/02-install-webmin.yml')
                 }
                 echo "${RESULT}"
             }
