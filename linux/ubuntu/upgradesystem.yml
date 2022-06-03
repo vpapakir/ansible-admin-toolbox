@@ -1,0 +1,10 @@
+- hosts: dinanikolaou-webservers
+  vars_files:
+    - packages.yml
+  tasks:
+  - name: Update Packages
+    apt:
+      name: "{{ modules }}"
+      state: latest
+      update_cache: yes
+      autoremove: yes 

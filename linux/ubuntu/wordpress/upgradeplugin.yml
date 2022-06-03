@@ -1,0 +1,5 @@
+- hosts: dinanikolaou-webservers
+  tasks: 
+  - name: Upgrade wordpress plugin
+    ansible.builtin.shell:
+      cmd: wp --allow-root --path=/var/www/dinanikolaou.gr/ plugin update elementor
