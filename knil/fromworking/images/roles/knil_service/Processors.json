@@ -1,0 +1,32 @@
+{
+	"PROCESSORS": [{
+		"PROCESSOR_TYPE": "disambig",
+		"MAX_MEMORY": "20000", 
+		"ADMIN_PORT": "19100", 
+		"THREAD_MEMORY": "4000", 
+		"autostart": "true"
+		},
+	{
+		"PROCESSOR_TYPE": "merge",
+		"MAX_MEMORY": "20000", 
+		"ADMIN_PORT": "19200", 
+		"THREAD_MEMORY": "4000", 
+		"autostart": "false",
+		},
+    {
+		"PROCESSOR_TYPE": "supervised",
+		"MAX_MEMORY": "20000", 
+		"ADMIN_PORT": "19300", 
+		"THREAD_MEMORY": "4000", 
+		"autostart": "false",
+		},
+
+	{
+		"PROCESSOR_TYPE": "unsupervised",
+		"MAX_MEMORY": "20000", 
+		"ADMIN_PORT": "19400", 
+		"THREAD_MEMORY": "4000", 
+		"autostart": "false",
+		}]
+}
+

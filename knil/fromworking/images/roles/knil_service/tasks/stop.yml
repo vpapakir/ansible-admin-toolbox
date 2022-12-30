@@ -1,0 +1,42 @@
+---
+
+- name: disable auto start
+  sudo: yes
+  replace: dest=/etc/supervisor/conf.d/knil_{{ TYPE }}.conf regexp="^autostart=true" replace="autostart=false"
+  when: state=="stop"
+
+- name: disable auto start
+  sudo: yes
+  replace: dest=/etc/supervisor/conf.d/knil_{{ TYPE }}.conf regexp="^autorestart=true" replace="autorestart=false"
+  when: state=="stop"
+
+
+- name: Eanble new PROCESSOR
+  sudo: yes
+  replace: dest=/etc/supervisor/conf.d/knil_{{ TYPE }}.conf regexp="^autostart=false" replace="autostart=true"
+  when: state=="start"
+
+- name: Eanble new PROCESSOR
+  sudo: yes
+  replace: dest=/etc/supervisor/conf.d/knil_{{ TYPE }}.conf regexp="^autorestart=false" replace="autorestart=true"
+  when: state=="start"
+
+
+- name: start knil process
+  sudo: yes
+  command: supervisorctl "{{ item }}"
+  with_items:
+   - reread
+   - update
+
+
+- name: Stop knil process
+  sudo: yes
+  command: supervisorctl stop "{{ TYPE }}:*"
+  when: state=="stop"
+
+
+- name : start knil process
+  sudo: yes
+  command: supervisorctl start "{{ TYPE }}:*"
+  when: state=="start"

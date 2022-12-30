@@ -1,0 +1,8 @@
+---
+# file: processors.yml
+-  hosts: all
+   roles:
+   - common
+   - knil
+   - java
+   - mongod

@@ -1,0 +1,13 @@
+#set as empty if you want to use user and password
+gitlabkey: "/home/benigo/.ssh/gitlab.id"
+gitsshprefix: "git@gitlab.com:"
+
+gitlab_user: "user%40knil.co"
+gitlab_password: "password"
+githttpsprefix: "https://{{gitlab_user}}:{{gitlab_password}}@gitlab.com/"
+
+git_projects: [ {
+    url: "knil/knil-common.git",
+    dest: "{{ ansible_env.HOME}}/git/knil_common"
+  }]
+
