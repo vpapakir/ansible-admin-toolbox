@@ -1,0 +1,52 @@
+---
+# file: desktop.yml
+- hosts: all
+  vars:
+    svn_username: "sirpy"
+    svn_password: "rhcp329"
+
+  pre_tasks:
+    - name: install required
+      apt: name={{item}} state=present
+      with_items:
+        - subversion
+        - git
+
+  roles:
+   - common
+   - mongod
+   - java
+   - {
+       role: jdauphant.intellij
+     }
+   - {
+       role: alban.andrieu.eclipse,
+       docker_files_enable: no,
+       user: "benigo",
+       home: "/home/benigo",
+       eclipse_plugins_emf_enabled: no,
+       eclipse_plugins_cdt_enabled: no,
+       eclipse_plugins_cmakeed_enabled: no,
+       eclipse_plugins_openinterminal_enabled: no,
+       eclipse_plugins_protobuf_enabled: no,
+       eclipse_plugins_yedit_enabled: no,
+       eclipse_plugins_shelled_enabled: no,
+       eclipse_plugins_webpageed_enabled: no,
+       eclipse_plugins_pydev_enabled: no,
+       eclipse_plugins_m2e_enabled: no,
+       eclipse_plugins_m2escala_enabled: no,
+       eclipse_plugins_subclipse_enabled: yes,
+       eclipse_major: "4",
+       eclipse_minor: "4.1",
+       eclipse_name: "scala-ide",
+       eclipse_archive: "scala-SDK-4.4.1-vfinal-2.11-linux.gtk.x86_64.tar.gz",
+       eclipse_url: "http://downloads.typesafe.com/scalaide-pack/4.4.1-vfinal-luna-211-20160504/{{eclipse_archive}}"
+     }
+#   - {
+#       role: cchurch.scm,
+#       scm_type: svn,
+#       scm_url: "https://subversion.assembla.com/svn/benigoknil/knil/knil_common/trunk/",
+#       scm_target_path: ~/workspace/knil_common,
+#       scm_username: "{{ svn_username }}",
+#       scn_password: "{{ svn_password }}"
+#     }

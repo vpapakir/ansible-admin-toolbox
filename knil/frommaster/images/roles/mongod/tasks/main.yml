@@ -1,0 +1,9 @@
+- name: Download debs
+  get_url: url=https://repo.percona.com/apt/percona-release_0.1-3.{{ ansible_distribution_release }}_all.deb
+           dest=/tmp/percona.deb
+- name: Install Repository
+  apt: deb="/tmp/percona.deb"
+- name: update Repository
+  apt: update-cache=true
+- name: install mongodb
+  apt: name=percona-server-mongodb
