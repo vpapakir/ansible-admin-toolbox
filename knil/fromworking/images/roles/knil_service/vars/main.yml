@@ -1,0 +1,41 @@
+---
+
+##Ec2 Variables
+
+##JAVA Variables
+
+CLASSPATH: ""
+JAVA_OPTS: ""
+JMX_OPTS: ""
+JAVA_GC_OPTS: ""
+JAVA_EXTRA_OPTS: ""
+
+
+#Number of instance
+#Max Memory MAX_MEMORY: "20000"
+
+##Process Type Variable PROCESSOR_TYPE: "disambig"
+##disambig,merge,unsup,supervised {Default is disambig}MAX_MEMORY
+
+# THREAD_COUNT: ""
+
+#http statistics port ADMIN_PORT: "19100"
+
+#Per Thread Memory THREAD_MEMORY: "4000"
+
+PROCESSORS:
+  - {PROCESSOR_TYPE: "disambig", MAX_MEMORY: "20000", ADMIN_PORT: "19100", THREAD_MEMORY: "4000"}
+  - {PROCESSOR_TYPE: "supervised", MAX_MEMORY: "20000", ADMIN_PORT: "19300", THREAD_MEMORY: "4000"}
+  - {PROCESSOR_TYPE: "merge", MAX_MEMORY: "20000", ADMIN_PORT: "19200", THREAD_MEMORY: "4000"}
+  - {PROCESSOR_TYPE: "unsupervised", MAX_MEMORY: "20000", ADMIN_PORT: "19000", THREAD_MEMORY: "4000"}
+
+
+#One active supervisord process name <Processortype_adminport>
+PROCESSOR_TYPE_ACTIVE: disambig
+
+#autostart variable for enable autostart and restart process true or false
+autostart: false
+
+
+
+  

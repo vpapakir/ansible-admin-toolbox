@@ -1,0 +1,4 @@
+artifactory_url: "{{ vault_artifactory_url }}"
+artifactory_user: "{{ vault_artifactory_user }}"
+artifactory_password: "{{ vault_artifactory_password }}"
+knil_version: 1.0.2352-SNAPSHOT

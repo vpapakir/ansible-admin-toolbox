@@ -1,0 +1,27 @@
+
+{% set num_instances =  ((ansible_memtotal_mb - 2048) // item.MAX_MEMORY | int) %}
+{% set THREAD_COUNT = (ansible_processor_vcpus / num_instances) %}
+
+{% for i in range(num_instances) %}
+
+[program:{{ item.PROCESSOR_TYPE }}_{{ i + 1}}]
+command=java -Xmx{{ item.MAX_MEMORY }} {{ CLASSPATH }} {{ JAVA_OPTS }} {{ JMX_OPTS }}  {{ JAVA_GC_OPTS }} {{ JAVA_EXTRA_OPTS }} sknil.queueProcessors.QueueProcessorRunner -D server={{ item.PROCESSOR_TYPE }} -D parallel={{ THREAD_COUNT | int }} -D adminPort={{ i+1 | int + item.ADMIN_PORT | int - 1 }}  -D taskMemory={{ item.THREAD_MEMORY }}
+{% if PROCESSOR_TYPE_ACTIVE == item.PROCESSOR_TYPE %}autostart=true
+autorestart=true
+{% else %}
+autostart=false
+autorestart=false
+{% endif %}
+stderr_logfile=/var/log/knil_process/{{ item.PROCESSOR_TYPE }}_error.log
+stdout_logfile=/var/log/knil_process/{{ item.PROCESSOR_TYPE }}_out.log
+
+
+
+{% endfor %}
+
+[group:{{ item.PROCESSOR_TYPE }}]
+programs={% for i in range(num_instances) %}{{ item.PROCESSOR_TYPE }}_{{ i + 1}}{% if (i+1) < (num_instances)%},{% endif %}{% endfor %}
+
+
+
+

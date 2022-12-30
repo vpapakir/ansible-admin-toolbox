@@ -1,0 +1,25 @@
+---
+- include_vars: vault.yml
+
+- name: maven_artifact requires lxml
+  apt: name=python-lxml state=installed
+- name: requires unzip
+  apt: name=unzip state=installed
+- name: requires gtar
+  apt: name=unzip state=installed
+
+- stat: path=/tmp/knil_Resources-{{knil_version}}.tar.bz2
+  register: hashes
+- stat: path=/tmp/knil_Resources-{{knil_version}}.zip
+  register: core
+- name: Download Knil Artifacts
+  maven_artifact: group_id=com.knil artifact_id=knil_Resources classifier=hashes version={{knil_version}} extension=tar.bz2 repository_url={{artifactory_url}} username={{artifactory_user}} password={{artifactory_password}} dest=/tmp/
+  when: hashes.stat.exists == False
+- name: Download Knil Artifacts
+  maven_artifact: group_id=com.knil artifact_id=knil_Resources classifier=core version={{knil_version}} extension=zip repository_url=http://spindel.knil.co:8081/artifactory/libs-snapshot-local username=admin password=w12ben71 dest=/tmp/
+  when: core.stat.exists == False
+- name: unpack knil
+  unarchive: src={{item}} dest=/home/vagrant/ copy=no
+  with_items:
+    - /tmp/knil_Resources-{{knil_version}}.tar.bz2
+    - /tmp/knil_Resources-{{knil_version}}.zip

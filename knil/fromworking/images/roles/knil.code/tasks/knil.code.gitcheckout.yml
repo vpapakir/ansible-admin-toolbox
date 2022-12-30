@@ -1,0 +1,21 @@
+- name: "install git"
+  apt: pkg=git state=present
+  become: yes
+  become_method: sudo
+    
+- name: "save ssh key"    
+  copy: src="{{ gitlabkey }}" dest=".ssh/gitlab.id" mode=0600
+  when: gitlabkey != none
+- name: "add ssh agent"
+  shell: eval `ssh-agent -s` && ssh-add .ssh/gitlab.id
+  when: gitlabkey != none
+             
+- name: git checkout ssh
+  git: repo={{gitsshprefix}}{{ item.url }} dest={{ item.dest }} key_file="{{ansible_env.HOME}}/.ssh/gitlab.id" accept_hostkey=yes version=master update=yes
+  with_items: "{{ git_projects }}"
+  when: gitlabkey != none
+
+- name: git checkout user/pass
+  git: repo={{githttpsprefix}}{{ item.url }} dest={{ item.dest }} key_file="{{ansible_env.HOME}}/.ssh/gitlab.id" accept_hostkey=yes version=master update=yes
+  with_items: "{{ git_projects }}"
+  when: gitlabkey == none

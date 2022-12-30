@@ -1,0 +1,42 @@
+---
+
+- name: Install supervisor
+  sudo: yes
+  apt:
+    name: "supervisor"
+    state: "present"
+
+- name: Get EC2 variable  
+  action: setup
+  register: ec2_infos
+
+
+- debug: msg="{{ ansible_processor_vcpus }}"
+- debug: msg="{{ ansible_memtotal_mb }}"
+
+
+- name: Setup supervisor knil process
+  sudo: yes
+  template: src=../templates/supervisor_knil_template.j2 dest=/etc/supervisor/conf.d/knil_{{ item.PROCESSOR_TYPE }}.conf mode=0764
+  with_items: "{{ PROCESSORS }}"
+  
+
+
+- name: Create log Dir
+  sudo: yes
+  file: path=/var/log/knil_process state=directory
+
+- name: start knil process
+  sudo: yes
+  command: supervisorctl "{{ item }}"
+  with_items:
+   - reread
+   - update
+
+- name: start knil process
+  sudo: yes
+  command: supervisorctl start "{{ PROCESSOR_TYPE_ACTIVE }}:*"
+
+
+
+
