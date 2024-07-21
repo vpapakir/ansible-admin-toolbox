@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+.dr-load-more-btn {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: .25rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all .3s ease; }
+  .dr-load-more-btn:hover {
+    background: #259876; }
+
+.delicious-recipes_page_delicious_recipes_analytics_dashboard {
+  background-color: #fff; }
+
+#dr-analitics-dashboard-page-wrapper {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--font-color);
+  padding: 80px 0; }
+  #dr-analitics-dashboard-page-wrapper ::root {
+    --font-color: #11142D;
+    --font-color-rgb: 17, 20, 45; }
+  #dr-analitics-dashboard-page-wrapper * {
+    box-sizing: border-box; }
+  #dr-analitics-dashboard-page-wrapper .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto; }
+  #dr-analitics-dashboard-page-wrapper .dr-ad__header {
+    margin-bottom: 30px; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__header .dr-subtitle {
+      font-size: 1.375rem;
+      margin-bottom: 10px; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__header .dr-title {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 15px;
+      margin-top: 0; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__header small {
+      font-size: 1rem; }
+  #dr-analitics-dashboard-page-wrapper .dr-ad__card {
+    border-radius: 20px;
+    padding: 40px 45px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__card::before {
+      content: "";
+      height: 36px;
+      width: calc(100% - 22px);
+      border-radius: 20px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      margin: auto;
+      z-index: -1; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__card::after {
+      content: "";
+      height: 36px;
+      width: calc(100% - 38px);
+      border-radius: 20px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+      margin: auto;
+      z-index: -1; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__card .dr-ad__card-icon {
+      margin-right: 20px; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card .dr-ad__card-icon svg path {
+        fill: var(--font-color); }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__card .dr-ad__card-title {
+      font-size: 1.125rem;
+      font-weight: 500; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__card .dr-ad__card-total-number {
+      font-size: 3rem;
+      font-weight: 600;
+      flex: 1;
+      text-align: right; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-recipes {
+      background-color: #0FB682;
+      color: #fff; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-recipes svg path {
+        fill: #fff; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-recipes::before, #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-recipes::after {
+        background-color: #E0EDED; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-likes {
+      background-color: #F25C5C;
+      color: #fff; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-likes svg path {
+        fill: #fff; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-likes::before, #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-likes::after {
+        background-color: #FAEBEB; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-wishlist {
+      background-color: #FC7245;
+      color: #fff; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-wishlist svg path {
+        fill: #fff; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-wishlist::before, #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-wishlist::after {
+        background-color: #FBEEE9; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-ratings {
+      background-color: #FFB24E;
+      color: #fff; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-ratings svg path {
+        fill: #fff; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-ratings::before, #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-ratings::after {
+        background-color: #FBF4EA; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-submission {
+      background-color: #007274;
+      color: #fff; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-submission svg path {
+        fill: #fff; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-submission::before, #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-submission::after {
+        background-color: #E3F4EF; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-pending-recipes {
+      background-color: #56B9D8;
+      color: #fff; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-pending-recipes svg path {
+        fill: #fff; }
+      #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-pending-recipes::before, #dr-analitics-dashboard-page-wrapper .dr-ad__card.total-pending-recipes::after {
+        background-color: #EAF3F7; }
+  #dr-analitics-dashboard-page-wrapper .dr-ad__report-cards {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 70px; }
+    #dr-analitics-dashboard-page-wrapper .dr-ad__report-cards .card-item {
+      padding: 15px;
+      max-width: 100%;
+      flex: 0 0 100%; }
+      @media (min-width: 768px) {
+        #dr-analitics-dashboard-page-wrapper .dr-ad__report-cards .card-item {
+          max-width: 50%;
+          flex: 0 0 50%; } }
+      @media (min-width: 1200px) {
+        #dr-analitics-dashboard-page-wrapper .dr-ad__report-cards .card-item {
+          flex: 0 0 33.333%;
+          max-width: 33.333%; } }
+  #dr-analitics-dashboard-page-wrapper hr {
+    height: 0;
+    width: 100%;
+    border-top: 1px solid rgba(var(--font-color-rgb), 0.05); }
+  #dr-analitics-dashboard-page-wrapper .dr-ud__report-bar-block {
+    box-shadow: 0 5px 57px rgba(17, 20, 45, 0.04);
+    padding: 45px 45px 60px;
+    border-radius: 25px;
+    position: relative;
+    background-color: #fff;
+    margin-top: 60px;
+    margin-bottom: 75px; }
+    #dr-analitics-dashboard-page-wrapper .dr-ud__report-bar-block::before {
+      content: "";
+      height: 100%;
+      width: calc(100% - 60px);
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -15px;
+      margin: auto;
+      z-index: -1;
+      box-shadow: 0 35px 57px rgba(17, 20, 45, 0.04);
+      border-radius: 25px; }
+    #dr-analitics-dashboard-page-wrapper .dr-ud__report-bar-block .dr-ud__card-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 35px; }
+      #dr-analitics-dashboard-page-wrapper .dr-ud__report-bar-block .dr-ud__card-header .dr-title {
+        font-size: 1.5rem;
+        font-weight: 500; }
+      #dr-analitics-dashboard-page-wrapper .dr-ud__report-bar-block .dr-ud__card-header select {
+        padding: 10px 12px;
+        border-radius: 10px;
+        border: 1px solid rgba(15, 182, 130, 0.1);
+        color: #0FB682;
+        font-size: .875rem;
+        font-weight: 500;
+        line-height: 1;
+        padding-right: 24px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.758' height='7.793' viewBox='0 0 12.758 7.793'%3E%3Cpath id='Path_23595' data-name='Path 23595' d='M1423.2,791.035l4.965-4.964,4.965,4.964' transform='translate(1434.542 792.449) rotate(180)' fill='none' stroke='%230fb682' stroke-linecap='round' stroke-width='2'/%3E%3C/svg%3E%0A");
+        background-size: 12px 12px; }
+  #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block {
+    margin-top: 60px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 5px 57px rgba(17, 20, 45, 0.04); }
+    #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__recipe-tab-buttons {
+      padding: 0 75px;
+      box-shadow: 0 25px 57px rgba(17, 20, 45, 0.04); }
+      #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__recipe-tab-buttons .dr-ud__tab-btn {
+        padding: 45px 0 30px;
+        font-size: 1rem;
+        font-weight: 500;
+        border: none;
+        background: none;
+        margin-right: 60px;
+        cursor: pointer;
+        opacity: .6;
+        position: relative; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__recipe-tab-buttons .dr-ud__tab-btn::before {
+          content: "";
+          width: 0;
+          height: 2px;
+          background-color: #0FB682;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          transition: all .3s ease; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__recipe-tab-buttons .dr-ud__tab-btn:hover {
+          opacity: 1; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__recipe-tab-buttons .dr-ud__tab-btn.active::before {
+          width: 100%; }
+    #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper {
+      padding: 50px 45px; }
+      #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper .dr-status {
+        font-size: .875rem;
+        font-weight: 500;
+        line-height: 1;
+        padding: 6px 10px;
+        border-radius: 5px; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper .dr-status::before {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          margin-right: 8px;
+          display: inline-block; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper .dr-status.status-published {
+          background-color: rgba(15, 182, 130, 0.05); }
+          #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper .dr-status.status-published::before {
+            background-color: #0FB682; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper .dr-status.status-pending {
+          background-color: rgba(242, 92, 92, 0.05); }
+          #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper .dr-status.status-pending::before {
+            background-color: #F25C5C; }
+      #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper .dr-view-count {
+        font-size: .875rem;
+        font-weight: 500;
+        color: rgba(var(--font-color-rgb), 0.8); }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper .dr-view-count::before {
+          content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.96' height='8.204' viewBox='0 0 12.96 8.204'%3E%3Cg id='noun_Eye_2307' opacity='0.7'%3E%3Cpath id='Path_30814' data-name='Path 30814' d='M6.48,8.2C3.02,8.2.308,4.526.194,4.369L0,4.1l.194-.267C.308,3.678,3.02,0,6.48,0s6.172,3.678,6.286,3.835l.194.267-.194.267C12.652,4.526,9.94,8.2,6.48,8.2ZM1.139,4.1C1.808,4.913,3.983,7.3,6.48,7.3S11.153,4.914,11.821,4.1C11.152,3.291,8.977.908,6.48.908S1.807,3.289,1.139,4.1Z' fill='%230fb682'/%3E%3Ccircle id='Ellipse_183' data-name='Ellipse 183' cx='2.512' cy='2.512' r='2.512' transform='translate(3.968 1.59)' fill='%230fb682'/%3E%3C/g%3E%3C/svg%3E%0A");
+          display: inline-block;
+          margin-right: .5rem; }
+      #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table {
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table .d-flex {
+          display: flex;
+          align-items: center; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table .text-center {
+          text-align: center; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table .dr-action-btn {
+          padding: 10px 12px;
+          border-radius: 5px;
+          transition: all .3s ease;
+          line-height: 1;
+          background: none; }
+          #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table .dr-action-btn path {
+            transition: all .3s ease; }
+          #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table .dr-action-btn.btn-edit {
+            border: 1px solid rgba(15, 182, 130, 0.1); }
+            #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table .dr-action-btn.btn-edit svg path {
+              fill: #0FB682; }
+            #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table .dr-action-btn.btn-edit:hover {
+              background-color: #0FB682; }
+              #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table .dr-action-btn.btn-edit:hover svg path {
+                fill: #fff; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table .dr-ratings-wrapper svg {
+          margin-right: 5px; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table .dr-ratings-wrapper .dr-rating-point {
+          color: rgba(var(--font-color-rgb), 0.8); }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table .dr-wishlist-wrapper svg {
+          margin-right: 5px; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table .dr-wishlist-wrapper .dr-wishlist-count {
+          color: rgba(var(--font-color-rgb), 0.8); }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table tr {
+          border-bottom: 1px solid rgba(17, 20, 45, 0.07); }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table th {
+          padding: 20px 15px; }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table th, #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper table td {
+          padding: 15px;
+          font-size: .875rem;
+          font-weight: 500;
+          color: rgba(var(--font-color-rgb), 0.4); }
+      #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper .dr-recipe-img {
+        margin-right: 15px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: var(--primary-color); }
+        #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper .dr-recipe-img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          vertical-align: middle; }
+      #dr-analitics-dashboard-page-wrapper .dr-ud__recipe-table-block .dr-ud__table-wrapper a {
+        color: #0FB682;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 1rem; }
+
+/*# sourceMappingURL=delicious-recipes-pro-analytics.css.map */

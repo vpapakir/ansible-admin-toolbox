@@ -1,0 +1,78 @@
+{
+    "translation-revision-date": "2021-10-16 17:00+0000",
+    "generator": "WP-CLI\/2.10.0",
+    "source": "assets\/build\/reviews.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "tr-TR",
+                "plural-forms": "nplurals=2; plural=n != 1;"
+            },
+            "Reviews": [
+                "\u0130ncelemeler"
+            ],
+            "All": [
+                "T\u00fcm"
+            ],
+            "Edit": [
+                "D\u00fczenle"
+            ],
+            "Mine": [
+                "Mine"
+            ],
+            "Pending": [
+                "Beklemede"
+            ],
+            "Approved": [
+                "Onayland\u0131"
+            ],
+            "Spam": [
+                "\u0130stenmeyen "
+            ],
+            "Trash": [
+                "\u00c7\u00f6p"
+            ],
+            "Filter by comment type": [
+                "Yorum t\u00fcr\u00fcne g\u00f6re filtrele"
+            ],
+            "All comment types": [
+                "T\u00fcm yorum t\u00fcrleri"
+            ],
+            "Questions": [
+                "Sorular"
+            ],
+            "Select All": [
+                "Hepsini se\u00e7"
+            ],
+            "Author": [
+                "Yazar"
+            ],
+            "Comment": [
+                "Yorum Yap"
+            ],
+            "In response to": [
+                "Cevap olarak"
+            ],
+            "Submitted on": [
+                "G\u00f6nderildi"
+            ],
+            "Select comment": [
+                "Yorum se\u00e7"
+            ],
+            "Unapprove": [
+                "onaylama"
+            ],
+            "Approve": [
+                "Onayla"
+            ],
+            "Not Spam": [
+                "Spam de\u011fil"
+            ],
+            "View Recipe": [
+                "Tarifi G\u00f6r\u00fcnt\u00fcle"
+            ]
+        }
+    }
+}

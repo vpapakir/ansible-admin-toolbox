@@ -1,0 +1,42 @@
+{
+    "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+    "generator": "WP-CLI\/2.10.0",
+    "source": "build\/delicious-recipes-pro\/assets\/public\/my-recipes\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "en",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "My Recipes": [
+                ""
+            ],
+            "Recipe Title": [
+                ""
+            ],
+            "Status": [
+                ""
+            ],
+            "Published": [
+                ""
+            ],
+            "Pending": [
+                ""
+            ],
+            "Sure to delete the recipe? This action cannot be reverted.": [
+                ""
+            ],
+            "Back to My Recipes": [
+                ""
+            ],
+            "Draft": [
+                ""
+            ],
+            "You have not submitted any recipes yet. You can add recipes through Submit Recipe.": [
+                ""
+            ]
+        }
+    }
+}

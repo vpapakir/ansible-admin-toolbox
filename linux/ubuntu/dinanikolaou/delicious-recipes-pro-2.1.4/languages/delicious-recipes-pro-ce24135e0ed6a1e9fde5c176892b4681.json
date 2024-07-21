@@ -1,0 +1,63 @@
+{
+    "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+    "generator": "WP-CLI\/2.10.0",
+    "source": "assets\/build\/equipment.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "en",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Buy Now": [
+                ""
+            ],
+            "Save Changes": [
+                ""
+            ],
+            "Equipment settings updated successfully !!": [
+                ""
+            ],
+            "Equipment settings has been changed. Please save the changes from Equipment Settings section before updating the equipment.": [
+                ""
+            ],
+            "Button Label": [
+                ""
+            ],
+            "Enter button label.": [
+                ""
+            ],
+            "Enter equipment button Label.": [
+                ""
+            ],
+            "Button Link": [
+                ""
+            ],
+            "Enter URL.": [
+                ""
+            ],
+            "Enter equipment URL.": [
+                ""
+            ],
+            "Add rel='nofollow' to link": [
+                ""
+            ],
+            "Enable this option to Add rel='nofollow' to link.": [
+                ""
+            ],
+            "Add rel='sponsored' to link": [
+                ""
+            ],
+            "Enable this option to Add rel='sponsored' to link.": [
+                ""
+            ],
+            "Open link in new window": [
+                ""
+            ],
+            "Enable this option to Open link in new window.": [
+                ""
+            ]
+        }
+    }
+}

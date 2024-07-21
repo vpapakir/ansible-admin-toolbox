@@ -1,0 +1,64 @@
+<wpml-config>
+    <admin-texts>
+        <key name="theme_mods_cookery">
+            <key name="blogname" />
+            <key name="blogdescription" />
+            <key name="load_more_label" />
+            <key name="loading_label" />
+            <key name="no_more_label" />
+            <key name="banner_title"/>
+            <key name="banner_subtitle"/>
+            <key name="button_one"/>
+            <key name="button_one_url"/>
+            <key name="button_two"/>
+            <key name="button_two_url"/>
+            <key name="banner_newsletter"/>
+            <key name="slider_custom">
+                <key name="*">
+                    <key name="title" />
+                    <key name="subtitle" /> 
+                    <key name="link" /> 
+                </key>                
+            </key>
+            <key name="video_title"/>
+            <key name="video_subtitle"/>
+            <key name="video_content"/>
+            <key name="video_readmore"/>
+            <key name="video_readmore_url"/>
+            <key name="video_subscribe_text"/>
+            <key name="video_subscribe_url"/>
+            <key name="feature_recipe_title"/>
+            <key name="feature_recipe_subtitle"/>
+            <key name="browse_category_title"/>
+            <key name="browse_category_subtitle"/>
+            <key name="recipe_index_title"/>
+            <key name="recipe_index_content"/>
+            <key name="recipe_indexes_list">
+                <key name="*">
+                    <key name="title" />
+                    <key name="btn_label" /> 
+                    <key name="number_posts" /> 
+                </key>                
+            </key>
+            <key name="newsletter_section_shortcode"/>
+            <key name="top_bar_newsletter"/>
+            <key name="notification_text"/>
+            <key name="notification_label"/>
+            <key name="notification_btn_url"/>
+            <key name="home_text"/>
+            <key name="blog_main_title"/>
+            <key name="blog_main_content"/>
+            <key name="read_more_text"/>
+            <key name="related_post_title"/>
+            <key name="related_portfolio_title"/>
+            <key name="newsletter_shortcode"/>
+            <key name="sidebar">
+                <key name="*">
+                    <key name="name" /> 
+                </key>
+            </key>
+            <key name="footer_copyright"/>
+            <key name="footer_disclaimer"/>
+        </key>
+    </admin-texts>
+</wpml-config>

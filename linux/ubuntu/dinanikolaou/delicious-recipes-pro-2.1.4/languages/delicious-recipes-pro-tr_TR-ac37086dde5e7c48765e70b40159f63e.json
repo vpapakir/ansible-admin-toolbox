@@ -1,0 +1,30 @@
+{
+    "translation-revision-date": "2021-10-16 17:00+0000",
+    "generator": "WP-CLI\/2.10.0",
+    "source": "assets\/build\/blocksJS.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "tr-TR",
+                "plural-forms": "nplurals=2; plural=n != 1;"
+            },
+            "Ingredients": [
+                "Malzemeler"
+            ],
+            "Notes": [
+                "Notlar"
+            ],
+            "Instructions": [
+                "Talimatlar"
+            ],
+            "Description": [
+                "A\u00e7\u0131klama"
+            ],
+            "Rest Time": [
+                "Dinlenme Zaman\u0131"
+            ]
+        }
+    }
+}

@@ -1,0 +1,14 @@
+- hosts: dinanikolaou-web-servers
+  gather_facts: yes
+  tasks:
+    
+    - name: Clean up temp files
+      command: "rm -rvf /root/cookery-2.2.0"
+
+    - name: Upload new Cookery Theme to Web Server
+      copy:
+        src: ./cookery-2.2.0
+        dest: /root/
+
+    - name: Backup previous version of Cookery Theme
+      command: "cp -rvf /var/www/dinanikolaou.gr/wp-content/themes/cookery /root/cookery-2.1.8"

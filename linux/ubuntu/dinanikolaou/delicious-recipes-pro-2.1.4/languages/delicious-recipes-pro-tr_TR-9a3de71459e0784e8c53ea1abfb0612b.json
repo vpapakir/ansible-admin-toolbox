@@ -1,0 +1,465 @@
+{
+    "translation-revision-date": "2021-10-16 17:00+0000",
+    "generator": "WP-CLI\/2.10.0",
+    "source": "assets\/build\/global.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "tr-TR",
+                "plural-forms": "nplurals=2; plural=n != 1;"
+            },
+            "Your recipe submission has been received!": [
+                "Tarif g\u00f6nderiminiz al\u0131nd\u0131!"
+            ],
+            "Your recipe submission has been published!": [
+                "Tarif g\u00f6nderiminiz yay\u0131nland\u0131!"
+            ],
+            "Recipe Details": [
+                "Tarif Detaylar\u0131"
+            ],
+            "Recipe Card Information": [
+                "Tarif Kart\u0131 Bilgileri"
+            ],
+            "Ingredients": [
+                "Malzemeler"
+            ],
+            "Gallery": [
+                "Galeri"
+            ],
+            "Nutrition Facts": [
+                "Beslenme Ger\u00e7ekleri"
+            ],
+            "Notes": [
+                "Notlar"
+            ],
+            "Start Reading Mode": [
+                "Okuma Modunu Ba\u015flat"
+            ],
+            "Start Timer": [
+                "Zamanlay\u0131c\u0131y\u0131 Ba\u015flat"
+            ],
+            "Share": [
+                "Payla\u015f"
+            ],
+            "Equipment Settings": [
+                "Ekipman Ayarlar\u0131"
+            ],
+            "Click to initialize RichEditor": [
+                "RichEditor'u ba\u015flatmak i\u00e7in t\u0131klay\u0131n"
+            ],
+            "Save Changes": [
+                "De\u011fi\u015fiklikleri Kaydet"
+            ],
+            "New Recipe Submission": [
+                "Yeni Tarif G\u00f6nderimi"
+            ],
+            "Recipe Published": [
+                "Tarif Yay\u0131nland\u0131"
+            ],
+            "Instructions": [
+                "Talimatlar"
+            ],
+            "Recipe Submission": [
+                "Tarif G\u00f6nderimi"
+            ],
+            "Additional Features": [
+                "Ek \u00f6zellikler"
+            ],
+            "Subject": [
+                "Konu"
+            ],
+            "Enter Subject here..": [
+                "Konuyu buraya girin.."
+            ],
+            "Message": [
+                "Mesaj"
+            ],
+            "Enter new recipe submission email template here..": [
+                "Yeni tarif g\u00f6nderme e-posta \u015fablonunu buraya girin.."
+            ],
+            "Insert Email Placeholders": [
+                "E-posta Yer Tutucular\u0131 Ekle"
+            ],
+            "List View": [
+                "Liste g\u00f6r\u00fcn\u00fcm\u00fc"
+            ],
+            "Grid View": [
+                "Izgara G\u00f6r\u00fcn\u00fcm\u00fc"
+            ],
+            "Sticky Recipe Bar": [
+                "Yap\u0131\u015fkan Tarif \u00c7ubu\u011fu"
+            ],
+            "Enable Floating Bar": [
+                "Kayan \u00c7ubu\u011fu Etkinle\u015ftir"
+            ],
+            "Enable this option to display recipe floating bar in recipe single page.": [
+                "Tarif tek sayfas\u0131nda tarif kayan \u00e7ubu\u011funu g\u00f6r\u00fcnt\u00fclemek i\u00e7in bu se\u00e7ene\u011fi etkinle\u015ftirin."
+            ],
+            "Enable\/Disable": [
+                "Etkinle\u015ftir \/ Devre d\u0131\u015f\u0131"
+            ],
+            "Edit": [
+                "D\u00fczenle"
+            ],
+            "Click on the pencil icon to edit the default text.": [
+                "Varsay\u0131lan metni d\u00fczenlemek i\u00e7in kalem simgesine t\u0131klay\u0131n."
+            ],
+            "Enter label": [
+                "Etiket girin"
+            ],
+            "Enable Equipment": [
+                "Ekipman\u0131 Etkinle\u015ftir"
+            ],
+            "Equipment Layout": [
+                "Ekipman D\u00fczeni"
+            ],
+            "Select the default layout for equipment listings.": [
+                "Ekipman listeleri i\u00e7in varsay\u0131lan d\u00fczeni se\u00e7in."
+            ],
+            "Equipment Shortcode": [
+                "Ekipman K\u0131sa Kodu"
+            ],
+            "Copy Shortcode!": [
+                "K\u0131sa Kodu Kopyala!"
+            ],
+            "Enter recipe published email template here..": [
+                "Tarif yay\u0131nlanm\u0131\u015f e-posta \u015fablonunu buraya girin.."
+            ],
+            "Enable Recipe Submission": [
+                "Tarif G\u00f6ndermeyi Etkinle\u015ftir"
+            ],
+            "Enable this option to allow users to submit recipe from the 'Recipe Dashboard' page.": [
+                "Kullan\u0131c\u0131lar\u0131n 'Tarif Panosu' sayfas\u0131ndan tarif g\u00f6ndermesine izin vermek i\u00e7in bu se\u00e7ene\u011fi etkinle\u015ftirin."
+            ],
+            "Customize Recipe Fields": [
+                "Tarif Alanlar\u0131n\u0131 \u00d6zelle\u015ftir"
+            ],
+            "Customize the order and titles of the Recipe Submission fields.": [
+                "Tarif G\u00f6nderme alanlar\u0131n\u0131n s\u0131ras\u0131n\u0131 ve ba\u015fl\u0131klar\u0131n\u0131 \u00f6zelle\u015ftirin."
+            ],
+            "Recipe Submission Guideline": [
+                "Tarif G\u00f6nderme K\u0131lavuzu"
+            ],
+            "Enter recipe submission guideline here..": [
+                "Tarif g\u00f6nderme k\u0131lavuzunu buraya girin.."
+            ],
+            "Enter the recipe submission guideline. This section will be displayed on the user recipe submission page.": [
+                "Tarif g\u00f6nderme k\u0131lavuzunu girin. Bu b\u00f6l\u00fcm, kullan\u0131c\u0131 tarifi g\u00f6nderme sayfas\u0131nda g\u00f6r\u00fcnt\u00fclenecektir."
+            ],
+            "Recipe Disclaimer": [
+                "Tarif Reddi"
+            ],
+            "Enter recipe disclaimer here..": [
+                "Tarif sorumluluk reddini buraya girin.."
+            ],
+            "Enter the recipe disclaimer.": [
+                "Tarif Feragatnamesini Girin."
+            ],
+            "Enable Notification": [
+                "Bildirimleri etkinle\u015ftir"
+            ],
+            "Enable this option to receive email notifications.": [
+                "E-posta bildirimleri almak i\u00e7in bu se\u00e7ene\u011fi etkinle\u015ftirin."
+            ],
+            "Email Address": [
+                "E-Posta Adres"
+            ],
+            "Enter multiple email recipients seperated by comma. Each email addresses added here will receive an email notification.": [
+                "Virg\u00fclle ay\u0131rarak birden \u00e7ok e-posta al\u0131c\u0131s\u0131 girin. Buraya eklenen her e-posta adresi bir e-posta bildirimi alacakt\u0131r."
+            ],
+            "Pending Mode": [
+                "Bekleme Modu"
+            ],
+            "Enable this option to add users submitted recipes in pending mode.": [
+                "Kullan\u0131c\u0131lar\u0131n g\u00f6nderdi\u011fi tarifleri bekleme modunda eklemek i\u00e7in bu se\u00e7ene\u011fi etkinle\u015ftirin."
+            ],
+            "Guest Mode": [
+                "Misafir Modu"
+            ],
+            "Enable this option to enable Guest Mode.": [
+                "Misafir Modunu etkinle\u015ftirmek i\u00e7in bu se\u00e7ene\u011fi etkinle\u015ftirin."
+            ],
+            "Guest Mode Shortcode": [
+                "Misafir Modu K\u0131sa Kodu"
+            ],
+            "Use [dr_guest_recipe_submission] to display a Recipe Submission form on any post\/page.": [
+                "Herhangi bir g\u00f6nderide\/sayfada bir Tarif G\u00f6nderme formu g\u00f6r\u00fcnt\u00fclemek i\u00e7in [dr_guest_recipe_submission] kullan\u0131n."
+            ],
+            "Allow User To Delete Recipe": [
+                "Kullan\u0131c\u0131n\u0131n Tarifi Silmesine \u0130zin Ver"
+            ],
+            "Enable this option to allow users to delete recipe.": [
+                "Kullan\u0131c\u0131lar\u0131n tarifi silmesine izin vermek i\u00e7in bu se\u00e7ene\u011fi etkinle\u015ftirin."
+            ],
+            "Enable Review Images": [
+                "\u0130nceleme Resimlerini Etkinle\u015ftir"
+            ],
+            "Enable this option to allow users to upload recipe review images in the comments.": [
+                "Kullan\u0131c\u0131lar\u0131n yorumlarda tarif inceleme resimleri y\u00fcklemesine izin vermek i\u00e7in bu se\u00e7ene\u011fi etkinle\u015ftirin."
+            ],
+            "Enable Questions": [
+                "Sorular\u0131 Etkinle\u015ftir"
+            ],
+            "Enable this option to allow users to ask questions in the comments.": [
+                "Kullan\u0131c\u0131lar\u0131n yorumlarda soru sormas\u0131na izin vermek i\u00e7in bu se\u00e7ene\u011fi etkinle\u015ftirin."
+            ],
+            "Section Title": [
+                "B\u00f6l\u00fcm ba\u015fl\u0131\u011f\u0131"
+            ],
+            "Cooking Method": [
+                "Pi\u015firme Y\u00f6ntemi"
+            ],
+            "Cuisine": [
+                "Yerel mutfak"
+            ],
+            "What's Your Reaction": [
+                ""
+            ],
+            "Thank you for rating this recipe.": [
+                ""
+            ],
+            "Related Recipes": [
+                ""
+            ],
+            "Reaction - Yummy": [
+                ""
+            ],
+            "Reaction - Love": [
+                ""
+            ],
+            "Reaction - Wow": [
+                ""
+            ],
+            "Reaction - Happy": [
+                ""
+            ],
+            "Reaction - Sad": [
+                ""
+            ],
+            "Reaction - Yay": [
+                ""
+            ],
+            "Reaction - Rolf": [
+                ""
+            ],
+            "Reaction - Smiling": [
+                ""
+            ],
+            "Reaction - Sleepy": [
+                ""
+            ],
+            "Reaction - Angry": [
+                ""
+            ],
+            "Reaction - Dead": [
+                ""
+            ],
+            "Reaction - Wink": [
+                ""
+            ],
+            "Layout Three": [
+                ""
+            ],
+            "Layout Four": [
+                ""
+            ],
+            "Layout Five": [
+                ""
+            ],
+            "Layout Six": [
+                ""
+            ],
+            "Layout Seven": [
+                ""
+            ],
+            "Recipe Key": [
+                ""
+            ],
+            "Course": [
+                ""
+            ],
+            "Tag": [
+                ""
+            ],
+            "Badge": [
+                ""
+            ],
+            "Autoload Recipes": [
+                ""
+            ],
+            "Enable this option to autoload recipes on the single recipe page.": [
+                ""
+            ],
+            "No. of Recipes": [
+                ""
+            ],
+            "Enter number of recipes to autoload per Recipe page.": [
+                ""
+            ],
+            "Select the number of recipes to autoload per Recipe page.": [
+                ""
+            ],
+            "Autoload Recipes Filter": [
+                ""
+            ],
+            "Prev": [
+                ""
+            ],
+            "Next": [
+                ""
+            ],
+            "Select the default autoload filter for Recipe.": [
+                ""
+            ],
+            "Inline Related Recipe Posts": [
+                ""
+            ],
+            "Enable this option to show Related Recipes on the single recipe post.": [
+                ""
+            ],
+            "Enter related recipe section title text": [
+                ""
+            ],
+            "This is the text that will be displayed on Related Recipes Section.": [
+                ""
+            ],
+            "Related Recipes Filter": [
+                ""
+            ],
+            "Select the default taxonomy for Related Recipes filter.": [
+                ""
+            ],
+            "Show Thumbnail": [
+                ""
+            ],
+            "Enable this option to display related recipes thumbnail.": [
+                ""
+            ],
+            "Fullwidth Related Recipes": [
+                ""
+            ],
+            "Enable this option to display the related recipes section fullwidth.": [
+                ""
+            ],
+            "Show after Paragraph": [
+                ""
+            ],
+            "Enter number of paragraphs.": [
+                ""
+            ],
+            "Set after how many paragraph you want to show the related recipes. Default, 3.": [
+                ""
+            ],
+            "No of Related Recipes": [
+                ""
+            ],
+            "Enter number of recipes.": [
+                ""
+            ],
+            "Set the number of related recipes. Default, 3.": [
+                ""
+            ],
+            "Enable this option to display the equipment in the recipe card.": [
+                ""
+            ],
+            "Equipment per row": [
+                ""
+            ],
+            "Enter the default number of equipment to display per row.": [
+                ""
+            ],
+            "Use [dr_recipe_equipments num_posts=x] to display x equipment. By default, all equipment are shown.": [
+                ""
+            ],
+            "Affiliate Disclosure": [
+                ""
+            ],
+            "Enter affiliate disclosure here..": [
+                ""
+            ],
+            "Enter the affiliate disclosure.": [
+                ""
+            ],
+            "Show on Recipes": [
+                ""
+            ],
+            "Enable this option to enable Affiliate Disclosure on the single recipe page.": [
+                ""
+            ],
+            "Location": [
+                ""
+            ],
+            "Top": [
+                ""
+            ],
+            "Bottom": [
+                ""
+            ],
+            "Select the default location for Affiliate Disclosure.": [
+                ""
+            ],
+            "Show on Equipment Page": [
+                ""
+            ],
+            "Enable this option to display the disclosure on Equipment Page.": [
+                ""
+            ],
+            "Show on Equipment Card": [
+                ""
+            ],
+            "Enable this option to display the disclosure on the Equipment card.": [
+                ""
+            ],
+            "Shortcode": [
+                ""
+            ],
+            "Use [DR_AFFILIATE_DISCLOSURE] to display Affiliate Disclosure anywhere on your website.": [
+                ""
+            ],
+            "Enable Ratings Without Comment": [
+                ""
+            ],
+            "This feature will allow your readers to rate your recipe by clicking on the rating stars.": [
+                ""
+            ],
+            "Spam Protection": [
+                ""
+            ],
+            "Check IP Address": [
+                ""
+            ],
+            "Anonymous ID Stored in Cookies": [
+                ""
+            ],
+            "Choose the method to avoid spam rating on your site. We recommend Anonymous ID Stored in Cookie to make it GDPR-compliant.": [
+                ""
+            ],
+            "Thank You Message": [
+                ""
+            ],
+            "Enter your Thank You message.": [
+                ""
+            ],
+            "Force To Leave A Comment": [
+                ""
+            ],
+            "Disable": [
+                ""
+            ],
+            "If rating is One": [
+                ""
+            ],
+            "If rating is Two or less": [
+                ""
+            ],
+            "If rating is Three or less": [
+                ""
+            ],
+            "If rating is Four or less": [
+                ""
+            ]
+        }
+    }
+}

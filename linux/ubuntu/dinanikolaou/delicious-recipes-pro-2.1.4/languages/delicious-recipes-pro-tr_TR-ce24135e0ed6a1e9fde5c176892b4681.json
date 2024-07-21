@@ -1,0 +1,66 @@
+{
+    "translation-revision-date": "2021-10-16 17:00+0000",
+    "generator": "WP-CLI\/2.10.0",
+    "source": "assets\/build\/equipment.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "tr-TR",
+                "plural-forms": "nplurals=2; plural=n != 1;"
+            },
+            "Equipment Settings": [
+                "Ekipman Ayarlar\u0131"
+            ],
+            "Buy Now": [
+                "\u015eimdi Al"
+            ],
+            "Equipment settings updated successfully !!": [
+                "Ekipman ayarlar\u0131 ba\u015far\u0131yla g\u00fcncellendi !!"
+            ],
+            "Equipment settings has been changed. Please save the changes from Equipment Settings section before updating the equipment.": [
+                "Ekipman ayarlar\u0131 de\u011fi\u015ftirildi. L\u00fctfen ekipman\u0131 g\u00fcncellemeden \u00f6nce Ekipman Ayarlar\u0131 b\u00f6l\u00fcm\u00fcndeki de\u011fi\u015fiklikleri kaydedin."
+            ],
+            "Button Label": [
+                "D\u00fc\u011fme Etiketi"
+            ],
+            "Enter button label.": [
+                "D\u00fc\u011fme etiketini girin."
+            ],
+            "Enter equipment button Label.": [
+                "Ekipman d\u00fc\u011fmesi Etiketini girin."
+            ],
+            "Button Link": [
+                "D\u00fc\u011fme Ba\u011flant\u0131s\u0131"
+            ],
+            "Enter URL.": [
+                "URL girin."
+            ],
+            "Enter equipment URL.": [
+                "Ekipman URL'sini girin."
+            ],
+            "Add rel='nofollow' to link": [
+                "Ba\u011flant\u0131ya rel='nofollow' ekleyin"
+            ],
+            "Enable this option to Add rel='nofollow' to link.": [
+                "Ba\u011flant\u0131ya rel='nofollow' eklemek i\u00e7in bu se\u00e7ene\u011fi etkinle\u015ftirin."
+            ],
+            "Add rel='sponsored' to link": [
+                "Ba\u011flant\u0131ya rel='sponsored' ekleyin"
+            ],
+            "Enable this option to Add rel='sponsored' to link.": [
+                "Ba\u011flant\u0131ya rel='sponsored' eklemek i\u00e7in bu se\u00e7ene\u011fi etkinle\u015ftirin."
+            ],
+            "Open link in new window": [
+                "Ba\u011flant\u0131y\u0131 yeni pencerede a\u00e7"
+            ],
+            "Enable this option to Open link in new window.": [
+                "Ba\u011flant\u0131y\u0131 yeni pencerede a\u00e7mak i\u00e7in bu se\u00e7ene\u011fi etkinle\u015ftirin."
+            ],
+            "Save Changes": [
+                "De\u011fi\u015fiklikleri Kaydet"
+            ]
+        }
+    }
+}

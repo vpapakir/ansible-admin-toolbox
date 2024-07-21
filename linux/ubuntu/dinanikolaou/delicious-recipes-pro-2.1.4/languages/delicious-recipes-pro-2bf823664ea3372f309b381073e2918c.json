@@ -1,0 +1,126 @@
+{
+    "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+    "generator": "WP-CLI\/2.10.0",
+    "source": "assets\/build\/recipe.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "en",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Delete": [
+                ""
+            ],
+            "Equipment": [
+                ""
+            ],
+            "Ingredient Keywords *": [
+                ""
+            ],
+            "Enter your ingredients keyword here": [
+                ""
+            ],
+            "Ingredient Keywords is required": [
+                ""
+            ],
+            "Ingredient Keywords already exists": [
+                ""
+            ],
+            "Link *": [
+                ""
+            ],
+            "Enter your link here": [
+                ""
+            ],
+            "Link is required": [
+                ""
+            ],
+            "Open in New Tab": [
+                ""
+            ],
+            "Rel attribute": [
+                ""
+            ],
+            "Nofollow": [
+                ""
+            ],
+            "Sponsored": [
+                ""
+            ],
+            "Data saved successfully": [
+                ""
+            ],
+            "Data updated successfully": [
+                ""
+            ],
+            "Save Changes": [
+                ""
+            ],
+            "Section Title": [
+                ""
+            ],
+            "User Submission Notes": [
+                ""
+            ],
+            "The notes send by User on submission for the admin.": [
+                ""
+            ],
+            "Edit Link": [
+                ""
+            ],
+            "Auto Calculate Nutrition Values": [
+                ""
+            ],
+            "Clear all values": [
+                ""
+            ],
+            "Nutrition values have been applied successfully.": [
+                ""
+            ],
+            "Nutrient": [
+                ""
+            ],
+            "Quantity": [
+                ""
+            ],
+            "Back": [
+                ""
+            ],
+            "Apply Calculated Values": [
+                ""
+            ],
+            "Calculate Nutrition": [
+                ""
+            ],
+            "Original Recipe Units": [
+                ""
+            ],
+            "Conversion": [
+                ""
+            ],
+            "Convert All Automatically": [
+                ""
+            ],
+            "No equipment selected.": [
+                ""
+            ],
+            "Enter equipment section title": [
+                ""
+            ],
+            "Enter title for the Equipment section.": [
+                ""
+            ],
+            "Select Equipment": [
+                ""
+            ],
+            "Select one equipment..": [
+                ""
+            ],
+            "Add Equipment": [
+                ""
+            ]
+        }
+    }
+}

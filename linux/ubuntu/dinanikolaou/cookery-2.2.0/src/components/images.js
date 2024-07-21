@@ -1,0 +1,15 @@
+export { default as customFonts } from '../assets/img/customfonts.png';
+export { default as freePro } from '../assets/img/freevspro.webp';
+export { default as logo } from '../assets/img/logo.png';
+export { default as offerOne } from '../assets/img/offer-one.png';
+export { default as plugins } from '../assets/img/plugins.png';
+export { default as salesFunnel } from '../assets/img/salesfunnel.png';
+export { default as SEO } from '../assets/img/SEO.png';
+export { default as GDPR } from '../assets/img/GDPR.png';
+export { default as support } from '../assets/img/support.png';
+export { default as themeClub } from '../assets/img/themeClub.png';
+export { default as themeInstall } from '../assets/img/themeinstall.png';
+export { default as vipSiteCare } from '../assets/img/vipsitecare.png';
+export { default as mainDemo } from '../assets/img/main-demo.webp';
+export { default as demo2 } from '../assets/img/demo-2.webp';
+export { default as demo3 } from '../assets/img/demo-3.webp';

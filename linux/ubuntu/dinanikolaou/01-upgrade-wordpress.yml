@@ -1,0 +1,60 @@
+- hosts: "{{ (groups['dinanikolaou-web-servers'] | shuffle)[0] }}"
+  gather_facts: yes
+  tasks:
+
+  - name: Backup Dinas Database
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ db export /mnt/backup/dn1.{{ ansible_date_time.iso8601 }}.sql"
+    run_once: true
+
+- hosts: "{{ (groups['dinanikolaou-web-servers'] | shuffle)[1] }}"
+  gather_facts: yes
+  tasks:
+
+  - name: Update Core Wordpress (Master)
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ core update"
+    run_once: true
+
+  - name: Update Core Wordpress DB
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ core update-db"
+
+
+- hosts: dinanikolaou-web-servers
+  gather_facts: yes
+  tasks:
+            
+  - name: Update Core Wordpress Language Files
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ language core update"
+
+  - name: Update Core Wordpress
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ core update --force"
+
+  - name: Update Core Wordpress Themes
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ theme update --all"
+
+  - name: Update Redis Plugin
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ plugin update redis-cache"
+      
+  - name: Update Redis Drop-in
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ redis update-dropin"
+
+  - name: Update Elementor Plugin
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ plugin update elementor"
+
+  - name: Update Elementor Plugin (Pro)
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ plugin update elementor-pro"
+
+  - name: Update all other Plugins
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ plugin update --all"
+
+  - name: Update All Plugin Language Files
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ language plugin update --all"
+
+- hosts: "{{ (groups['dinanikolaou-web-servers'] | shuffle)[1] }}"
+  gather_facts: yes
+  tasks:
+
+  - name: Update Elementor DB
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ elementor update db"
+
+  - name: Update Yoast Indices
+    command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ yoast index"

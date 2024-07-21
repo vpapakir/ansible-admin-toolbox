@@ -1,0 +1,17 @@
+- hosts: dinanikolaou-web-servers
+  gather_facts: yes
+  tasks:
+    
+    - name: Clean up temp files
+      command: "rm -rvf /root/delicious-recipes-pro-2.1.4"
+
+    - name: Upload new Delicious Recipes Pro Release to Web Server
+      copy:
+        src: ./delicious-recipes-pro-2.1.4
+        dest: /root/
+
+    - name: Backup previous version of Delicious Recipes Pro
+      command: "mv -v /var/www/dinanikolaou.gr/wp-content/plugins/delicious-recipes-pro /root/delicious-recipes-pro-2.1.0"
+
+    - name: Deploy new release of Delicious Recipes Pro
+      command: "mv -v /root/delicious-recipes-pro-2.1.4 /var/www/dinanikolaou.gr/wp-content/plugins/delicious-recipes-pro"

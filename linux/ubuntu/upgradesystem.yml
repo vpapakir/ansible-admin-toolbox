@@ -1,10 +1,9 @@
-- hosts: dinanikolaou-webservers
-  vars_files:
-    - packages.yml
+- hosts: civo
   tasks:
-  - name: Update Packages
-    apt:
-      name: "{{ modules }}"
-      state: latest
-      update_cache: yes
-      autoremove: yes 
+  - name: Update All Installed Packages
+    apt: upgrade=dist force_apt_get=yes
+
+- hosts: dinanikolaou-all-servers
+  tasks:
+  - name: Update All Installed Packages
+    apt: upgrade=dist force_apt_get=yes

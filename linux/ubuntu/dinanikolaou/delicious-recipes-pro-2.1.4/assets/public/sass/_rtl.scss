@@ -1,0 +1,134 @@
+body.rtl{
+    .dr-floating-menu-wrapper {
+        button, .button{
+            i{
+                margin-right: 0;
+                margin-left: 8px;
+            }
+        }
+        .post-like {
+            .dr_like__recipe svg{
+                margin-right: 0;
+                margin-left: 8px;
+            }
+        }
+        .dr-time-wrap{
+            margin-right: 0;
+            margin-left: 12px;
+            i{
+                margin-right: 0;
+                margin-left: 10px;
+            }
+        }
+    }
+    .dr-related-recipes__title{
+        padding-right: 0;
+        padding-left: 100px;
+        &::before{
+            left: auto;
+            right: 0;
+        }
+    }
+    .dr-related-recipes {
+        .dr-related-recipes__list {
+            .dr-related-recipe-item {
+                .dr-recipe-fig{
+                    padding-right: 0;
+                    padding-left: 24px;
+                }
+            }
+        }
+    }
+    .dr-related-posts-splide {
+        .dr-entry-meta {
+            > span{
+                margin-right: 0;
+                margin-left: 15px;
+            }
+        }
+        .dr-related-splide {
+            .splide__arrows{
+                right: auto;
+                left: 0;
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    .dr-pro-comment-section {
+        .dr-pro-comment-container {
+            .dr-review-ratings {
+                .dr-total-user-review{
+                    @media(min-width: 768px){
+                        padding-right: 0;
+                        margin-right: 0;
+                        padding-left: 60px;
+                        margin-left: 60px;
+                        border-right: none;
+                        border-left: 1px solid rgba(var(--primary-color-rgb), 0.1);
+                    }
+                }
+                .dr-ratings-level-list {
+                    .dr-rating-level {
+                        .dr-star-ratings-wrapper{
+                            padding-right: 0;
+                            padding-left: 20px;
+                            .dr-rating-point{
+                                margin-right: 0;
+                                margin-left: 15px;
+                            }
+                        }
+                        .dr-ratings-percent{
+                            padding-right: 20px;
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dr-pro-comment-section .dr-pro-comment-container .dr-review-ratings .dr-total-user-review .dr-rating-point .point{
+        margin-right: 0;
+        margin-left: 5px;
+    }
+
+    .dr-ud__repeater-wrapper .dr-add-repeater-field-button svg{
+        margin-right: 0;
+        margin-left: 13px;
+    }
+    .dr-ud__instructions-fields .dr-ud__repeater-wrapper .dr-ud__repeate-section .dr-image-upload-wrap .dr-button-group .dr-upload-action-btn:not(:last-child){
+        padding: 0 0 0 8px;
+        margin: 0 0 0 8px;
+        border-right: 0;
+        border-left: 1px solid rgba(126, 137, 147, 0.3);
+    }
+    .dr-ud__instructions-fields .dr-ud__repeater-wrapper .dr-ud__repeate-section .dr-image-upload-wrap .dr-button-group .dr-upload-action-btn i{
+        margin: 0 0 0 10px;
+    }
+    .dr-button-group .dr-btn + .dr-btn{
+        margin-right: 20px;
+        margin-left: 0;
+    }
+    .dr-ud__toggle-btn::after{
+        margin: 0 15px 0 0;
+    }
+    .dr-extra-meta .dr-sim-metaa .dr-meta-title .icon{
+        margin: 0 0 0 10px;
+    }
+    @media(min-width: 768px){
+        .dr-ud__instructions-fields .dr-ud__repeater-wrapper .dr-ud__repeate-section .dr-instruction-repeater-row .dr-upload-col{
+            margin-right: 0;
+            margin-left: 45px;
+        }
+    }
+    @media(min-width: 992px){
+        .dr-ud__nutrition-fields .dr-ud__nutrition-wrapper .dr-nutrition-output-area{
+            margin-left: 0;
+            margin-right: 110px;
+        }
+        .dr-summary-holder.layout-5 .dr-recipe-summary-inner .dr-image-wrapper{
+            margin: 0 0 0 15px;
+        }
+    }
+}

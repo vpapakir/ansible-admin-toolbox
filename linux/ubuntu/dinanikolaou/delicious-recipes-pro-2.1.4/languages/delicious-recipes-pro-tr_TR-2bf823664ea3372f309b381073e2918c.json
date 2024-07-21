@@ -1,0 +1,51 @@
+{
+    "translation-revision-date": "2021-10-16 17:00+0000",
+    "generator": "WP-CLI\/2.10.0",
+    "source": "assets\/build\/recipe.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "tr-TR",
+                "plural-forms": "nplurals=2; plural=n != 1;"
+            },
+            "Delete": [
+                "Sil"
+            ],
+            "User Submission Notes": [
+                "Kullan\u0131c\u0131 G\u00f6nderim Notlar\u0131"
+            ],
+            "The notes send by User on submission for the admin.": [
+                "Kullan\u0131c\u0131 taraf\u0131ndan y\u00f6netici i\u00e7in g\u00f6nderilirken g\u00f6nderilen notlar."
+            ],
+            "No equipment selected.": [
+                "Hi\u00e7bir ekipman se\u00e7ilmedi."
+            ],
+            "Section Title": [
+                "B\u00f6l\u00fcm ba\u015fl\u0131\u011f\u0131"
+            ],
+            "Enter title for the Equipment section.": [
+                "Ekipman b\u00f6l\u00fcm\u00fc i\u00e7in ba\u015fl\u0131k girin."
+            ],
+            "Add Equipment": [
+                "Ekipman Ekle"
+            ],
+            "Select a equipment.": [
+                "Bir ekipman se\u00e7in."
+            ],
+            "Equipment": [
+                ""
+            ],
+            "Enter equipment section title": [
+                ""
+            ],
+            "Select Equipment": [
+                ""
+            ],
+            "Select one equipment..": [
+                ""
+            ]
+        }
+    }
+}

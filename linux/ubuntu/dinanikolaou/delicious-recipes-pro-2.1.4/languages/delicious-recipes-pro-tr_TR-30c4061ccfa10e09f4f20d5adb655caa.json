@@ -1,0 +1,88 @@
+{
+    "translation-revision-date": "2021-10-16 17:00+0000",
+    "generator": "WP-CLI\/2.10.0",
+    "source": "assets\/build\/analytics.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "tr-TR",
+                "plural-forms": "nplurals=2; plural=n != 1;"
+            },
+            "%s": [
+                "%s"
+            ],
+            "Hi,": [
+                "Selam,"
+            ],
+            "Here's a summary of your website.": [
+                "\u0130\u015fte web sitenizin bir \u00f6zeti."
+            ],
+            "Total Recipes": [
+                "Toplam Tarifler"
+            ],
+            "Total Likes": [
+                "Toplam Be\u011feni"
+            ],
+            "Total Favorites": [
+                "Toplam Favoriler"
+            ],
+            "Total Ratings": [
+                "Toplam Puanlar"
+            ],
+            "Total Recipes Submission": [
+                "Toplam Tarif G\u00f6nderimi"
+            ],
+            "Total Pending Recipes": [
+                "Toplam Bekleyen Tarifler"
+            ],
+            "S.N.": [
+                "S.N."
+            ],
+            "Recipe Title": [
+                "Tarif Ba\u015fl\u0131\u011f\u0131"
+            ],
+            "No Of Views": [
+                "G\u00f6r\u00fcnt\u00fcleme Say\u0131s\u0131"
+            ],
+            " Views": [
+                " G\u00f6r\u00fcnt\u00fcle"
+            ],
+            "No Recipes Found.": [
+                "Tarif Bulunamad\u0131."
+            ],
+            "Load More": [
+                "Daha fazla y\u00fckle"
+            ],
+            "Popular Recipes": [
+                "Pop\u00fcler Tarifler"
+            ],
+            "Top Rated Recipes": [
+                "En \u00c7ok Oy Alan Tarifler"
+            ],
+            "Most Favorite Recipes": [
+                "En Favori Tarifler"
+            ],
+            "Submitted Recipes": [
+                "G\u00f6nderilen Tarifler"
+            ],
+            "Status": [
+                "Durum"
+            ],
+            "Published": [
+                "Yay\u0131nlanan"
+            ],
+            "No. Of Favorites": [
+                "No. Of Favorites"
+            ],
+            "Average Rating (No. Of Ratings)": [
+                "Ortalama \u0130nceleme (\u0130nceleme Say\u0131s\u0131)"
+            ],
+            " (%s rating)": [
+                " (%s inceleme)",
+                " (%s incelemeler)"
+            ]
+        }
+    }
+}

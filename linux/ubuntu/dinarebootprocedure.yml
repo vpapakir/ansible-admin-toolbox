@@ -1,0 +1,4 @@
+- hosts: [dinanikolaou-web-servers]
+  tasks:
+  - name: Unconditionally reboot the machine with all defaults
+    ansible.builtin.reboot:

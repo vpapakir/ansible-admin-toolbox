@@ -1,0 +1,78 @@
+#customizer_reset_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#customizer_reset_btn button{
+    margin: 0 0 10px;
+    text-shadow: none;
+    font-size: 15px;
+    padding: 6px 20px;
+    height: auto;
+}
+
+.customize-control-description span.highlight{
+    background: #e74c3c;
+    color: #fff;
+    padding: 0 6px;
+}
+
+.customize-control-description p{
+    font-size: 16px;
+    line-height: 1.650em;
+}
+
+.customize-control-description{
+    margin: 0;
+}
+
+.customize-reset-title{
+    font-size: 16px;
+}
+
+#customizer_reset{
+    background: #e74c3c;
+    color: #fff;
+}
+
+/** jquery confirm css */
+.jconfirm.jconfirm-white .jconfirm-bg, .jconfirm.jconfirm-light .jconfirm-bg {
+    background-color: #000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+.jconfirm.jconfirm-light .jconfirm-box {
+    max-width: 600px;
+    padding: 25px;
+    text-align: center;
+}
+.jconfirm .jconfirm-box div.jconfirm-title-c {
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    color: #e74c3c;
+}
+.jconfirm .jconfirm-box div.jconfirm-content-pane {
+        font-size: 16px;
+        margin-top: 20px;
+}
+.jconfirm .jconfirm-box div.jconfirm-content-pane p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons {
+    float: none;
+}
+.jconfirm .jconfirm-box div.jconfirm-content-pane strong {
+    font-weight: 700;
+    color: #333;
+}
+.jconfirm .jconfirm-box div.jconfirm-content-pane p + .danger_info {
+    margin-bottom: 10px;
+    display: block;
+    color: #e74c3c;
+}

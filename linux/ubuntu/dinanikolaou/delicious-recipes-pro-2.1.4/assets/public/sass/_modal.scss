@@ -1,0 +1,168 @@
+[data-modal]{
+    position: fixed;
+    bottom: var(--offsetBottom, 50px);
+    z-index: 111;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+[data-position="left"]{
+    left: var(--offsetSide, 50px);
+}
+
+[data-position="right"]{
+    right: var(--offsetSide, 50px);
+}
+
+[data-position="center"]{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.custom-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, .5);
+    padding: 50px;
+    z-index: 111;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &.show{
+        display: flex;
+        animation: fadeIn .3s ease;
+    }
+    .custom-modal-content{
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        max-height: 100%;
+        padding: 0;
+        display: flex;
+        .custom-modal-container{
+            width: 100%;
+            max-height: 100%;
+            background-color: #fff;
+            padding: 30px;
+            overflow: auto;
+            box-shadow: 0 4px 20px rgba(#000, .2);
+        }
+        .custom-modal-close{
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background-color: #f15641;
+            color: #fff;
+        }
+    }
+    .search-form{
+        position: sticky;
+        top: 0;
+        margin: 0 0 30px;
+        background: #fff;
+        z-index: 111;
+        box-shadow: 0 0 0 30px #fff;
+        label{
+            display: none;
+        }
+    }
+    .dr-archive-list-gridwrap{
+        .dr-archive-single{
+            @media(min-width: 992px){
+                width: 25%;
+            }
+        }
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+// fadeout
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.wpd-modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, .5);
+    transition: all .3s ease;
+    z-index: 1111111;
+    animation: fadeIn .3s ease;
+    &.fade-out{
+        animation: fadeOut .3s ease;
+    }
+    .wpd-modal{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: calc(100% - 30px);
+        width: 900px;
+        max-height: 80vh;
+        background-color: #fff;
+        padding: 30px;
+        overflow: auto;
+        box-shadow: 0 4px 20px rgba(#000, .2);
+        border-radius: 4px;
+        animation: slideUp .3s ease;
+        .wpd-modal-close{
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background-color: #f15641;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 0;
+            mask: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM15.7072 8.29289C16.0977 8.68342 16.0977 9.31658 15.7072 9.70711L13.4142 12.0001L15.7071 14.293C16.0976 14.6835 16.0976 15.3167 15.7071 15.7072C15.3166 16.0977 14.6834 16.0977 14.2929 15.7072L12 13.4143L9.7072 15.7071C9.31668 16.0976 8.68351 16.0976 8.29299 15.7071C7.90246 15.3166 7.90246 14.6834 8.29299 14.2929L10.5858 12.0001L8.29289 9.7072C7.90237 9.31668 7.90237 8.68351 8.29289 8.29299C8.68342 7.90246 9.31658 7.90246 9.70711 8.29299L12 10.5859L14.293 8.29289C14.6835 7.90237 15.3167 7.90237 15.7072 8.29289Z' fill='black'/%3E%3C/svg%3E%0A");
+            mask-size: 100%;
+            mask-repeat: no-repeat;
+        }
+    }
+}
