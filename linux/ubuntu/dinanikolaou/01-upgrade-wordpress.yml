@@ -1,5 +1,5 @@
 - hosts: "{{ (groups['dinanikolaou-web-servers'] | shuffle)[0] }}"
-  gather_facts: yes
+  gather_facts: true
   tasks:
 
   - name: Backup Dinas Database
@@ -7,7 +7,7 @@
     run_once: true
 
 - hosts: "{{ (groups['dinanikolaou-web-servers'] | shuffle)[1] }}"
-  gather_facts: yes
+  gather_facts: true
   tasks:
 
   - name: Update Core Wordpress (Master)
@@ -19,9 +19,8 @@
 
 
 - hosts: dinanikolaou-web-servers
-  gather_facts: yes
+  gather_facts: true
   tasks:
-            
   - name: Update Core Wordpress Language Files
     command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ language core update"
 
@@ -33,7 +32,7 @@
 
   - name: Update Redis Plugin
     command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ plugin update redis-cache"
-      
+
   - name: Update Redis Drop-in
     command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ redis update-dropin"
 
@@ -50,7 +49,7 @@
     command: "wp --allow-root --path=/var/www/dinanikolaou.gr/ language plugin update --all"
 
 - hosts: "{{ (groups['dinanikolaou-web-servers'] | shuffle)[1] }}"
-  gather_facts: yes
+  gather_facts: true
   tasks:
 
   - name: Update Elementor DB

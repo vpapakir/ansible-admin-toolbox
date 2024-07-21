@@ -1,9 +1,0 @@
-- hosts: dinanikolaou-webservers
-  tasks: 
-  - name: Upgrade wordpress plugin (elementor)
-    ansible.builtin.shell:
-      cmd: wp --allow-root --path=/var/www/dinanikolaou.gr/ plugin update elementor
-
-  - name: Upgrade wordpress plugin (google site kit)
-    ansible.builtin.shell:
-      cmd: wp --allow-root --path=/var/www/dinanikolaou.gr/ plugin update google-site-kit 

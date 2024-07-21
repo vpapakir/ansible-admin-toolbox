@@ -1,7 +1,6 @@
 - hosts: dinanikolaou-web-servers
-  gather_facts: yes
+  gather_facts: true
   tasks:
-    
     - name: Clean up temp files
       command: "rm -rvf /root/cookery-2.2.0"
 
